@@ -1,0 +1,51 @@
+<%- include("header"); -%>
+
+
+
+<div class="menuFlex">
+  <div class="menu">
+    <ul>
+      <li> <a data-filter=".all" href="#" class="active">everything</a> </li>
+      <li> <a data-filter=".eersteperiode" href="#">before 2010</a> </li>
+      <li> <a data-filter=".tweedeperiode" href="#">after 2010</a> </li>
+      <li> <a data-filter=".derdeperiode" href="#">Not Known</a> </li>
+    </ul>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+
+
+
+<div class="wrapper">
+
+
+  <% for(let i=0; i<kunst.length; i++) { %>
+
+    <div class="<%=kunst[i].class%>" style="height: 300px !important;">
+      <div class="overlay" style="  height: <%=kunst[i].height%>px ;">
+    <div class="text">
+      <p>
+        <%-kunst[i].name%> <br> <%-kunst[i].artist%> <br> <%-kunst[i].year%> <br> <br>
+        <%-kunst[i].description%>
+      </p>
+    </div>
+      </div>
+      <img src="<%=kunst[i].url%>" alt="foto" height=" <%=kunst[i].height%> ">
+    </div>
+
+    <% } %>
+
+
+
+</div>
+
+<script src="./js/script.js"></script>
+<script src="./js/isotope.js"></script>
+
+
+
+<%- include("footer"); -%>

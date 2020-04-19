@@ -1,0 +1,43 @@
+<%- include("header"); -%>
+
+<script src="./js/script.js"></script>
+<script src="./js/isotope.js"></script>
+
+<div class="homeIntro">
+  <div class="homeIntroLinks">
+    <h1>Welcome to <br> the Banksy expo.</h1>
+  </div>
+  <div class="homeIntroRechts">
+    <p class="introText">This is the <span class="highlight">official Banksy Expo site.</span>
+    Be amazed by the amazing streetart by the anonymous artist known by his alter ego "Banksy".
+  There is little as nothing known about his <span class="highlight">background or identity</span>, wich makes his art the more interessting. Banksy's art tackles <span class="highlight">social problems </span>.
+<br> <br>
+Enjoy.
+ </p>
+ <a href="/art" class="discover">Discover more</a>
+  </div>
+</div>
+
+<h2>In the spotlight</h2>
+<div class="homeKijker">
+  <div class="homeKijkerKunst">
+
+  </div>
+
+  <div class="homeKijkerText">
+<p class="homeKijkerNaam">
+  <%-kunst[5].name%>
+</p>
+<p class="homeKijkerRest">
+  <br> <%-kunst[5].artist%> <br> <%-kunst[5].year%> <br> <br>
+  <%-kunst[5].description%>
+</p>
+
+
+  </div>
+
+</div>
+
+
+
+<%- include("footer"); -%>

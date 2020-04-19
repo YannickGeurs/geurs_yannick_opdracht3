@@ -1,0 +1,37 @@
+<%- include("header"); -%>
+<script src="./js/script.js"></script>
+<script src="./js/isotope.js"></script>
+
+
+<div class="detailContainer">
+  <h3>Detail</h3>
+  <div class="detailInnerFlex">
+      <img src="<%=kunst[3].url%>" alt="foto" height=" 620 " class="detailFoto">
+
+      <div class="detailText">
+<p class="detailName"><%-kunst[3].name%></p>
+
+<p><br> <%-kunst[3].artist%> <br> <%-kunst[3].year%> <br> </p>
+
+<p class="detailsubTitle">Description</p>
+<p><%-kunst[3].langeuitleg%></p>
+
+      <p class="detailsubTitle">Design</p>
+      <p><%-kunst[3].design%></p>
+
+
+
+    </div>
+
+  </div>
+  <p class="detailsubTitleHistory">History</p>
+  <p class="detailTextHistory"><%-kunst[3].history%></p>
+</div>
+
+
+
+
+
+
+
+<%- include("footer"); -%>
